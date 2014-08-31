@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Geolocalizacion </title>
+	<style>
+		#Mapa
+		{
+			display:none;
+			height:400px;
+			width:900px;
+		}
+		.mostrar
+		{
+			display:block !important;
+		}
+		#bntMapa
+		{
+			display:block;
+		}
+	</style>
+</head>
+<body>
+	<h1> Averigua tu ubicacion  </h1>
+	<p>
+		Haz click en el boton para tu ubicacion en el Mapa
+	</p>
+	<span id="posicion">
+		
+	</span>
+	<input type="button" value="Ver en el Mapa" id="bntMapa">
+	<div id="Mapa">
+		
+	</div>
+	<script src="./js/googlemap.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false&callback=drawMap"></script>
+	<script src="./js/geolocation.js"></script>
+</body>
+</html>
