@@ -7,7 +7,7 @@ function drawMap(lati,longi) {
 		center :  new google.maps.LatLng(lati,longi),
 		mapTypeId: google.maps.MapTypeId.SATELLITE
 	}
-	debugger;
+
 	map =  new google.maps.Map(mapa,mapOption);
 	mark = new google.maps.Marker({
 		position:map.getCenter(),
